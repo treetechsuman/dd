@@ -1,0 +1,23 @@
+<ul id="myUL">
+  {% for province in provinces %}
+  <li><span class="box">{{province.name}}</span>
+    <ul class="nested">
+      {% for district in districts %}
+      {% if district.province.pk == province.pk %}
+      <li><span class="box">{{district.name}}</span>
+        <ul class="nested">
+          {% for municipality in municipalities %}
+          {% if municipality.district.pk == district.pk %}
+          <li>{{municipality.name}}</li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </li> 
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </li>
+  {% endfor %}
+</ul>
+
+  

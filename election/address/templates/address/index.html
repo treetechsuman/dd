@@ -1,0 +1,21 @@
+{% extends 'address/base.html' %}
+
+{% block title %} This is index {% endblock%}
+
+{% block content %}
+<div class="row">
+    <div class="col-2">
+        {% include "address\sidenav.html" %}
+    </div>       
+    <div class="col">
+        <div id="googleMap" style="width:100%;height:500px;"></div>
+        <div id="information">
+            <h3>Information</h3>
+            <h4 id="name">Name</h4>
+        </div>
+    </div>
+    
+</div><!-- row end -->
+
+
+{% endblock %}

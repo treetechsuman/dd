@@ -1,0 +1,18 @@
+For setup 
+to run server
+py manage.py runserver
+
+to activate virtual environment
+env\Scripts\activate
+
+for seeding data
+
+py manage.py seedaddress
+
+for creating application
+python manage.py startapp appname
+
+important links
+
+cpanel deployment
+https://medium.com/@pyzimos/deploying-django-web-application-using-cpanel-6687b8057439

@@ -1,0 +1,1 @@
+Warning 1: The output driver does not seem to natively support Integer64 type for field ID. Converting it to Real instead. -mapFieldType can be used to control field type conversion.
